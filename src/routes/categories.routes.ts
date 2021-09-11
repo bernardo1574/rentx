@@ -12,13 +12,13 @@ categoriesRoutes.post('/', (request, response) => {
 
   createCategoryService.execute({ name, description });
 
-  return response.status(201).send();
+  return response.status(201).end();
 });
 
 categoriesRoutes.get('/', (request, response) => {
   const all = categoriesRepository.list();
 
-  response.json(all);
+  return response.json(all);
 });
 
 export { categoriesRoutes };
