@@ -1,0 +1,10 @@
+node_modules/
+build/
+temp/
+routesHttp/
+.env
+.vscode
+ormconfig.json
+
+tmp/*
+node_modules
