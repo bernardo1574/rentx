@@ -4,18 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-<<<<<<< HEAD
     "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts "
   },
   "dependencies": {
     "express": "^4.17.1",
     "uuid": "^8.3.2"
   },
-=======
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules --respawn src/server.ts"
-  },
-  "dependencies": {},
->>>>>>> 811642b6356cec48ac1d95f7fa4c51eb5e4f7e3d
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/uuid": "^8.3.0",
@@ -23,7 +17,6 @@
     "@typescript-eslint/parser": "^4.25.0",
     "eslint": "^7.27.0",
     "eslint-config-airbnb-base": "^14.2.1",
-<<<<<<< HEAD
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.23.3",
@@ -31,14 +24,5 @@
     "prettier": "^2.3.0",
     "ts-node-dev": "^1.1.6",
     "typescript": "^4.3.2"
-=======
-    "eslint-config-prettier": "^7.2.0",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-import-helpers": "^1.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "prettier": "^2.2.1",
-    "ts-node-dev": "^1.1.6",
-    "typescript": "^4.2.4"
->>>>>>> 811642b6356cec48ac1d95f7fa4c51eb5e4f7e3d
   }
 }
