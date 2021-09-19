@@ -1,6 +1,5 @@
 {
   "env": {
-<<<<<<< HEAD
     "es2020": true,
     "node": true
   },
@@ -17,27 +16,6 @@
   "plugins": [
     "@typescript-eslint",
     "prettier"
-=======
-      "es2020": true,
-      "node": true,
-      "jest": true
-  },
-  "extends": [
-      "airbnb-base",
-      "plugin:@typescript-eslint/recommended",
-      "prettier",
-      "plugin:prettier/recommended"
-  ],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-      "ecmaVersion": 12,
-      "sourceType": "module"
-  },
-  "plugins": [
-      "@typescript-eslint",
-      "eslint-plugin-import-helpers",
-      "prettier"
->>>>>>> 811642b6356cec48ac1d95f7fa4c51eb5e4f7e3d
   ],
   "rules": {
     "prettier/prettier": "error",
@@ -47,13 +25,9 @@
       "error",
       {
         "selector": "interface",
-<<<<<<< HEAD
         "format": [
           "PascalCase"
         ],
-=======
-        "format": ["PascalCase"],
->>>>>>> 811642b6356cec48ac1d95f7fa4c51eb5e4f7e3d
         "custom": {
           "regex": "^I[A-Z]",
           "match": true
@@ -74,30 +48,16 @@
         "ts": "never"
       }
     ],
-<<<<<<< HEAD
     "import/no-extraneous-dependencies": [
       "error",
       {
         "devDependencies": true
       }
-=======
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        "newlinesBetween": "always",
-        "groups": ["module", "/^@shared/", ["parent", "sibling", "index"]],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      { "devDependencies": ["**/*.spec.js"] }
->>>>>>> 811642b6356cec48ac1d95f7fa4c51eb5e4f7e3d
     ]
   },
   "settings": {
-      "import/resolver": {
-          "typescript": {}
-      }
+    "import/resolver": {
+      "typescript": {}
+    }
   }
 }

@@ -4,6 +4,7 @@ temp/
 routesHttp/
 .env
 .vscode
+.config
 ormconfig.json
 
 tmp/*
