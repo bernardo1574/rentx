@@ -117,15 +117,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "type": "object",
-                "properties": {
-                  "name": {
-                    "type": "string"
-                  },
-                  "description": {
-                    "type": "string"
-                  }
-                },
+                "$ref": "#/definitions/Specification",
                 "example": {
                   "name": "specification name sample",
                   "description": "specification description sample"
@@ -141,6 +133,19 @@
           "500": {
             "description": "Specification Already Exists"
           }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Specification": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
         }
       }
     }
