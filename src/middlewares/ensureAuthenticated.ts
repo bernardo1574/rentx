@@ -10,7 +10,7 @@ export async function ensureAuthenticated(
   req: Request,
   res: Response,
   next: NextFunction,
-) {
+): Promise<void> {
   if (!req.headers.authorization) {
     throw new AppError('token missing', 401);
   }
@@ -28,6 +28,10 @@ export async function ensureAuthenticated(
     if (!user) {
       throw new AppError('user not found');
     }
+
+    req.user = {
+      userId: user.id,
+    };
 
     next();
   } catch (err) {
